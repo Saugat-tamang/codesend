@@ -1,19 +1,8 @@
 "use client";
 
-import {
-  createContext,
-  ReactNode,
-  useCallback,
-  useEffect,
-  useState,
-} from "react";
 import { authService } from "@/services/auth.service";
-import type {
-  AuthContextValue,
-  LoginPayload,
-  RegisterPayload,
-  User,
-} from "@/types/auth";
+import { createContext, ReactNode, useCallback, useEffect, useState } from "react";
+import type { AuthContextValue, LoginPayload, RegisterPayload, User } from "@/types/auth";
 
 export const AuthContext = createContext<AuthContextValue | undefined>(
   undefined
@@ -52,9 +41,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <AuthContext.Provider
-      value={{ user, isLoading, login, register, logout, refetch }}
-    >
+    <AuthContext.Provider value={{ user, isLoading, login, register, logout, refetch }}>
       {children}
     </AuthContext.Provider>
   );

@@ -35,8 +35,5 @@ export default function DashboardLayout({
       </div>
     );
   }
-
-  // TODO: render <Sidebar /> and <DashboardNavbar /> around {children}
-  // once those components exist — this just guards the route for now.
   return <>{children}</>;
 }

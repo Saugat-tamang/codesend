@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Code2 } from "lucide-react";
+import Link from "next/link";
 
 export default function LandingPage() {
   return (
@@ -23,8 +24,12 @@ export default function LandingPage() {
             </nav>
           </div>
           <div className="flex items-center gap-2">
-            <Button variant="ghost">Log in</Button>
-            <Button variant="primary">Sign up</Button>
+            <Link href="/login">
+                <Button variant="ghost">Log in</Button>
+            </Link>
+            <Link href="/register">
+              <Button variant="primary">Sign up</Button>
+            </Link>
           </div>
         </div>
       </header>
