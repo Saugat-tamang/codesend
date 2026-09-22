@@ -1,0 +1,103 @@
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 0 0 28px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.formError {
+  background: var(--danger-bg);
+  border: 1px solid var(--danger);
+  color: var(--text);
+  font-size: 13px;
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  margin-bottom: 16px;
+}
+
+.successBox {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 13.5px;
+  line-height: 1.5;
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.checkboxRow input {
+  margin-top: 3px;
+  accent-color: var(--accent);
+}
+
+.checkboxRow label {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.checkboxRow a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
+  color: var(--text-faint);
+  font-size: 12.5px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.switchLine {
+  margin-top: 28px;
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.switchLine a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.backLine {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.backLine a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.backLine a:hover {
+  color: var(--text);
+}
