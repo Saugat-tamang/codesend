@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-
+import type { Metadata } from "next";
+import Nav from "@/components/ui/Nav";
 import { AuthProvider } from "@/providers/AuthProvider";
+import { Inter, JetBrains_Mono } from "next/font/google";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -24,6 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-[var(--color-bg)] text-[var(--color-text)]">
         <AuthProvider>
+          <Nav />
           {children}
         </AuthProvider>
       </body>
