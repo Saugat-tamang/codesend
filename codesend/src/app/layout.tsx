@@ -1,7 +1,10 @@
 // src/app/layout.tsx
+
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+
+import { AuthProvider } from "@/providers/AuthProvider";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -25,7 +28,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[var(--color-bg)] text-[var(--color-text)]">
-        {children}
+        <AuthProvider>
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );

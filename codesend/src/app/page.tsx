@@ -1,4 +1,4 @@
-import { Button } from "@/components/Button";
+import { Button } from "@/components/ui/Button";
 import { Code2 } from "lucide-react";
 
 export default function LandingPage() {
