@@ -468,8 +468,6 @@ export default function Landing() {
           <span>✓ No signup required</span>
           <span className="w-px h-3 bg-white/10" />
           <span>✓ Open source extension</span>
-          <span className="hidden sm:block w-px h-3 bg-white/10" />
-          <span className="hidden sm:block">✓ 12,400+ developers</span>
         </div>
       </section>
 
